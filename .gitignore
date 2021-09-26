@@ -13,3 +13,5 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 >>>>>>> refs/remotes/DWES/main
+/UD0_Repaso_Java_Ev_Inicial/.project
+/UD1_Aplicaciones_Web_en_Entorno_Servidor/.project
