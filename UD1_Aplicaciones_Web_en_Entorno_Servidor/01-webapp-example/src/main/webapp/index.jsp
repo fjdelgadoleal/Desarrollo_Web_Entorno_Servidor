@@ -7,6 +7,6 @@
 <title>First Webapp Maven Example!</title>
 </head>
 <body>
-<h1>Hello Peope!!!</h1>
+<h1>Hello People!!!</h1>
 </body>
 </html>
