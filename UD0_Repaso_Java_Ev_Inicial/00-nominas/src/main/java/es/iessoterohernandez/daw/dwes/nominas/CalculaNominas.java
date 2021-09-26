@@ -1,7 +1,7 @@
 package es.iessoterohernandez.daw.dwes.nominas;
 
 /**
- * Hello world!
+ * Hello Nóminas!
  *
  */
 public class CalculaNominas 

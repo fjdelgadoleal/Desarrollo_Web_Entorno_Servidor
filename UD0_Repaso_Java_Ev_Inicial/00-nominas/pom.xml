@@ -18,6 +18,18 @@
     <maven.compiler.source>16</maven.compiler.source>
     <maven.compiler.target>16</maven.compiler.target>
   </properties>
+  
+<!--   <reporting>
+	<plugins>
+	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-javadoc-plugin</artifactId>
+	    <configuration>
+	      <maxmemory>512</maxmemory>
+	    </configuration>
+	  </plugin>
+	</plugins>
+  </reporting> -->
 
   <dependencies>
     <dependency>
@@ -69,6 +81,27 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.3.1</version>
+          <executions>
+          <execution>
+            <id>resource-bundles</id>
+            <phase>package</phase>
+            <goals>
+              <!-- produce source artifact for main project sources -->
+              <goal>resource-bundle</goal>
+ 
+              <!-- produce source artifact for project test sources -->
+              <goal>test-resource-bundle</goal>
+            </goals>
+            <configuration>
+              <detectOfflineLinks>false</detectOfflineLinks>
+            </configuration>
+          </execution>
+        </executions>
         </plugin>
       </plugins>
     </pluginManagement>
