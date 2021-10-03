@@ -86,22 +86,22 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.3.1</version>
-          <executions>
+<!--           <executions>
           <execution>
             <id>resource-bundles</id>
             <phase>package</phase>
             <goals>
-              <!-- produce source artifact for main project sources -->
+              produce source artifact for main project sources
               <goal>resource-bundle</goal>
  
-              <!-- produce source artifact for project test sources -->
+              produce source artifact for project test sources
               <goal>test-resource-bundle</goal>
             </goals>
             <configuration>
               <detectOfflineLinks>false</detectOfflineLinks>
             </configuration>
           </execution>
-        </executions>
+        </executions> -->
         </plugin>
       </plugins>
     </pluginManagement>
