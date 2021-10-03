@@ -53,19 +53,23 @@ public class CalculaNominas
 	public static void main( String[] args )
     {
         try {
+        	//Fichero de entrada
         	File fentrada = new File("empleados.txt");
 	        FileReader fr = new FileReader(fentrada);
 	        BufferedReader br = new BufferedReader(fr);
 	        
+	        //Fichero de texto de salida para actualizar el de entrada
         	File fentradaActualizada = new File("empleadosActualizados.txt");
 	        FileWriter fw = new FileWriter(fentradaActualizada);
 	        BufferedWriter bw = new BufferedWriter(fw);
 	        
+	        //Fichero binario de salida
 	        File fsalida = new File("salarios.dat");
 	        FileOutputStream fos = new FileOutputStream(fsalida);
 	        BufferedOutputStream bos = new BufferedOutputStream(fos);
 //	        OutputStreamWriter bos = new OutputStreamWriter(fos);
 	        
+	        //Variables
 	        String line;;
 	        Empleado e;
 	        String []datosEmp;
@@ -92,6 +96,7 @@ public class CalculaNominas
 	        	bw.write(e.nombre+";"+e.dni+";"+e.sexo+";"+e.getCategoria()+";"+e.anyos+'\n');
 	        }
 	        
+	        //Cerramos todos los búferes
 	        br.close();
 	        bos.close();
 	        bw.close();
