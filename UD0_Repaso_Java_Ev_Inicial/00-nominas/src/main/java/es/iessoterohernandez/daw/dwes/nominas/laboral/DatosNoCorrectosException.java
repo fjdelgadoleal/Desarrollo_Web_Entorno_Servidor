@@ -1,6 +1,3 @@
-/**
- * 
- */
 package es.iessoterohernandez.daw.dwes.nominas.laboral;
 
 /**
@@ -9,13 +6,10 @@ package es.iessoterohernandez.daw.dwes.nominas.laboral;
  */
 public class DatosNoCorrectosException extends Exception {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 
+	 * DatosNoCorrectosExcepcion
 	 */
 	public DatosNoCorrectosException() {
 		super("Datos no correctos");

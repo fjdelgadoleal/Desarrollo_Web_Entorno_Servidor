@@ -9,8 +9,8 @@ package es.iessoterohernandez.daw.dwes.nominas.laboral;
  */
 public class Empleado extends Persona {
 
-	private int categoria;
-	public int anyos;
+	private int categoria=1;
+	public int anyos=0;
 	
 	/**
 	 * @param nombre
@@ -35,8 +35,8 @@ public class Empleado extends Persona {
 	 */
 	public Empleado(String nombre, String dni, char sexo) throws DatosNoCorrectosException {
 		super(nombre, dni, sexo);
-		categoria=1;
-		this.anyos=0;
+//		this.categoria=1;
+//		this.anyos=0;
 	}
 
 	/**
