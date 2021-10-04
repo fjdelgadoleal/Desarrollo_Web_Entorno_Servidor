@@ -123,8 +123,7 @@ public class CalculaNominas
 //	    	  e.printStackTrace();
 //	      }catch (DatosNoCorrectosException e) {
 //			e.printStackTrace();
-//	      }catch (SQLException throwables) {
-//			throwables.printStackTrace();
+//	      }
 //		}
 //    }
 //    

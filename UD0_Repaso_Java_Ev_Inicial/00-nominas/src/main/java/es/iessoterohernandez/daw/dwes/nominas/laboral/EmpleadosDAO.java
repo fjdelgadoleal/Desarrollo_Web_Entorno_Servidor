@@ -117,7 +117,8 @@ public class EmpleadosDAO {
 	        		e = new Empleado(datosEmp[0], datosEmp[1], datosEmp[2].toCharArray()[0]);
 	        	else //en el caso de que vayan todos los datos
 	        		e = new Empleado(datosEmp[0], datosEmp[1], datosEmp[2].toCharArray()[0], Integer.parseInt(datosEmp[3]), Integer.parseInt(datosEmp[4]));
-	        	altaEmpleado(e);	
+	        	altaEmpleado(e);
+//TO-DO	        updateSueldo(e.dni); //Comprobar
 	        }
 	        br.close();
         }catch (FileNotFoundException ex){
