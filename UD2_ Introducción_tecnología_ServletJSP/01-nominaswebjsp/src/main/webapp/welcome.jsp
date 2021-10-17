@@ -8,7 +8,7 @@
 </head>
 <body>
 Hola amigos!!
-<% response.sendRedirect("/01-nominaswebjsp/menu.jsp"); %>
+<% response.sendRedirect("/nominaswebjsp/menu.jsp"); %>
 
 </body>
 </html>
